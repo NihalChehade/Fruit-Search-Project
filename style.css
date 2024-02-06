@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(230, 190, 46), rgb(227, 100, 15));
+}
+
+.search-container {
+  width:15%;
+  position: relative;
+  
+
+}
+.search-container input,
+.search-container .suggestions {
+  position:fixed;
+  font-size: 16px;
+  width: 15%;
+}
+.search-container input {
+  
+  font-weight: bold;
+}
+.search-container .suggestions {
+  position: relative;
+  display: block;
+ margin-top: 2px;
+  
+  
+  
+}
+
+ul {
+ 
+  background-color: rgba(233, 200, 137, 0.3);
+  list-style-type: none;
+  display: none;
+  padding: 1px;
+  border: 0.px solid rgb(202, 93, 15);
+  overflow:hidden;
+  overflow-y:scroll;
+  scrollbar-color: rgb(224, 151, 40) rgb(241, 182, 123);
+  max-height: 300px;
+ 
+}
+
+
+ul.has-suggestions {
+  display: block;
+  position: fixed;
+  margin-top: 20px;
+  width: 15%;
+ 
+
+}
+.hoverdSuggestionLi {
+  background: rgb(227, 100, 15);
+}
+ul li {
+  padding: 1px;
+  margin-top: 5px;
+  cursor: pointer;
+ 
+}
+
+input {
+ 
+  width: 15%;
+  background-color: rgba(233, 200, 137, 0.3);
+  border: 0px;
+  border-bottom: 1px solid rgb(202, 93, 15);
+  
+}
+
+input:focus {
+  outline-color: transparent;
+  border: 1px solid rgb(202, 93, 15);
+}
