@@ -21,7 +21,6 @@ function search(str) {
 }
 
 function searchHandler(e) {
-	e.preventDefault();
 	//capture typed input
 	const keysPressed = e.target.value;
    
